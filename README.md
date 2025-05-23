@@ -39,7 +39,7 @@ For the text-based image editing, run:
 python run_edit.py \
   --img_path samples/gas_station.jpg \
   --src_prompt "A gas station with a white and red sign that reads "CAFE" There are several cars parked in front of the gas station, including a white car and a van." \
-  --tgt_prompt "A gas station with a white and red sign that reads "NeurIPS" There are several cars parked in front of the gas station, including a white car and a van.";
+  --tgt_prompt "A gas station with a white and red sign that reads "NeurIPS" There are several cars parked in front of the gas station, including a white car and a van."
 ```
 
 The expected result:
