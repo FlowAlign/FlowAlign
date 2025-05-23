@@ -35,7 +35,6 @@ class StableDiffusion3Base(BaseSampler):
         self.dtype = dtype
 
         pipe = StableDiffusion3Pipeline.from_pretrained(model_key, torch_dtype=self.dtype)
-        pipe.enable_xformers_memory_efficient_attention()
 
         self.scheduler = pipe.scheduler
 
