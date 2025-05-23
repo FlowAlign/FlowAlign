@@ -58,5 +58,3 @@ urllib3==2.4.0
 wcwidth==0.2.13
 xformers==0.0.30
 zipp==3.21.0
-torch
-torchvision
