@@ -53,7 +53,7 @@ You can freely change the editing method using arguments:
 
 If you use `--efficient_memory`, text encoder will pre-compute text embeddings and is removed from the GPU.
 
-This allows us to solve inverse problem with a single GPU with VRAM 24GB.
+This allows us to run image editing with a single GPU with VRAM 24GB.
 
 <!-- 
 ## Pre-trained Models
