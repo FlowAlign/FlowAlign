@@ -6,16 +6,13 @@ This repository is the official implementation of FlowAlign, an inversion & trai
 
 ### Abstract
 
-:bulb: Recent inversion-free, flow-based image editing methods such as FlowEdit leverages a pre-trained noise-to-image flow model such as Stable Diffusion 3, 
-enabling text-driven manipulation by solving an ordinary differential equation (ODE). 
+💡 Recent inversion-free, flow-based editors leverage models like Stable Diffusion 3 to enable text-driven image editing via ODE integration.
 
-:thinking: While the lack of exact latent inversion is a core advantage of these methods, it often results in unstable editing trajectories and poor source consistency.
+🤔 However, skipping latent inversion often leads to unstable trajectories and poor source consistency.
 
-:rocket: To address this limitation, we propose {\em FlowAlign} that introduces a flow-matching loss as a regularization mechanism to promote smoother and more stable trajectories during the editing process. Notably, the flow-matching loss is shown to explicitly balance semantic alignment with the edit prompt and structural consistency with the source image along the trajectory. 
+🚀 FlowAlign addresses this by introducing a flow-matching loss—a simple yet effective regularizer that ensures smooth, semantically aligned, and structurally consistent edits.
 
-:star_struck: Furthermore, FlowAlign naturally supports reverse editing by simply reversing the ODE trajectory, highliting the reversible and consistent nature of the transformation.
-
-:test_tube: Extensive experiments demonstrate that FlowAlign outperforms existing methods in both source preservation and editing controllability.
+🌟 Thanks to its ODE-based formulation, FlowAlign naturally supports reverse editing, highlighting its reversible and robust transformation capability.
 
 ## Requirements
 
