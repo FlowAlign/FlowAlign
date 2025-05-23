@@ -10,7 +10,7 @@ This repository is the official implementation of FlowAlign, an inversion & trai
 
 🤔 However, skipping latent inversion often leads to unstable trajectories and poor source consistency.
 
-🚀 FlowAlign addresses this by introducing a flow-matching loss—a simple yet effective regularizer that ensures smooth, semantically aligned, and structurally consistent edits.
+🚀 **FlowAlign** addresses this by introducing a flow-matching loss—a simple yet effective regularizer that ensures smooth, semantically aligned, and structurally consistent edits.
 
 🌟 Thanks to its ODE-based formulation, FlowAlign naturally supports reverse editing, highlighting its reversible and robust transformation capability.
 
@@ -26,8 +26,8 @@ To install requirements:
 
 ```
 conda create -n flowalign python==3.11
-pip install -r requirements.txt
 conda activate flowalign
+pip install -r requirements.txt
 ```
 
 ## Quick Start
