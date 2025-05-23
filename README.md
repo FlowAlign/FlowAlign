@@ -34,13 +34,31 @@ pip install -r requirements.txt
 ## Quick Start
 For the text-based image editing, run:
 
+**Examples 1**
 ```
-python run_edit.py
+python run_edit.py \
+  --img_path samples/gas_station.jpg \
+  --src_prompt "A gas station with a white and red sign that reads "CAFE" There are several cars parked in front of the gas station, including a white car and a van." \
+  --tgt_prompt "A gas station with a white and red sign that reads "NeurIPS" There are several cars parked in front of the gas station, including a white car and a van.";
 ```
 
-The expected result is below.
+The expected result:
 
 ![result](assets/result.jpg)
+
+
+**Example 2**
+
+```
+python run_edit.py \
+  --img_path samples/raw_meat.jpg \
+  --src_prompt "a photo of raw meat with herb on it"
+  --tgt_prompt "a photo of raw salmon with herb on it";
+```
+
+The expected result:
+
+![result2](assets/result2.jpg)
 
 
 ## How to choose editing methods
