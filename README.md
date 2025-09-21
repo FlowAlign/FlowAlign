@@ -37,23 +37,23 @@ For the text-based image editing, run:
 **Examples 1**
 ```
 python run_edit.py \
-  --img_path samples/gas_station.png \
-  --src_prompt "A gas station with a white and red sign that reads "CAFE" There are several cars parked in front of the gas station, including a white car and a van." \
-  --tgt_prompt "A gas station with a white and red sign that reads "NeurIPS" There are several cars parked in front of the gas station, including a white car and a van."
+  --img_path "samples/bicycle.jpg" \
+  --src_prompt "a slanted mountain bicycle on the road in front of a building" \
+  --tgt_prompt "a slanted rusty mountain bicycle on the road in front of a building"
 ```
 
 The expected result:
 
-![result](assets/result.jpg)
+![result](assets/result1.jpg)
 
 
 **Example 2**
 
 ```
-python run_edit.py \
-  --img_path samples/raw_meat.jpg \
-  --src_prompt "a photo of raw meat with herb on it"
-  --tgt_prompt "a photo of raw salmon with herb on it";
+python run_edit.py --workdir "workidr-con" \
+  --img_path "samples/cat.jpg" \
+  --src_prompt "a opened eyes cat sitting on wooden floor" \
+  --tgt_prompt "a closed eyes cat sitting on wooden floor"
 ```
 
 The expected result:
@@ -72,6 +72,10 @@ You can freely change the editing method using arguments:
 If you use `--efficient_memory`, text encoder will pre-compute text embeddings and is removed from the GPU.
 
 This allows us to run image editing with a single GPU with VRAM 24GB.
+
+
+## Reproducibility
+All edited images were generated on a single NVIDIA RTX 3090 GPU, using a fixed random seed of 123 and a Classifier-Free Guidance (CFG) scale of 13.5.
 
 <!-- 
 ## Pre-trained Models

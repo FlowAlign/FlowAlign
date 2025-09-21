@@ -192,10 +192,11 @@ class SD3FlowAlign(SD3Euler):
         imgH, imgW = img_shape if img_shape is not None else (1024, 1024)
 
         # encode text prompts
-        with torch.no_grad():
-            src_prompt_emb = self.prepare_embed(src_prompt, src_prompt_emb) 
-            tgt_prompt_emb = self.prepare_embed(tgt_prompt, tgt_prompt_emb)
-            null_prompt_emb = self.prepare_embed(null_prompt, null_prompt_emb)
+        if tgt_prompt_emb is None:
+            with torch.no_grad():
+                src_prompt_emb = self.prepare_embed(src_prompt, src_prompt_emb) 
+                tgt_prompt_emb = self.prepare_embed(tgt_prompt, tgt_prompt_emb)
+                null_prompt_emb = self.prepare_embed(null_prompt, null_prompt_emb)
 
         self.scheduler.set_timesteps(NFE, device=self.transformer.device)
         timesteps = self.scheduler.timesteps
