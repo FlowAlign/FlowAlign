@@ -50,7 +50,7 @@ The expected result:
 **Example 2**
 
 ```
-python run_edit.py --workdir "workidr-con" \
+python run_edit.py \
   --img_path "samples/cat.jpg" \
   --src_prompt "a opened eyes cat sitting on wooden floor" \
   --tgt_prompt "a closed eyes cat sitting on wooden floor"
