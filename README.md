@@ -1,6 +1,13 @@
-# FlowAlign: Trajectory-Regularized, Inversion-Free Flow-based Image Editing
+# [ICLR2026] FlowAlign: Trajectory-Regularized, Inversion-Free Flow-based Image Editing
 
 This repository is the official implementation of FlowAlign, an inversion & training free image editing algorithm. 
+
+> [Jeongsol Kim*](https://www.jeongsol.dev/), [Yeobin Hong*](https://yeobinhong.github.io/), [Jonghyun Park](https://jh-park99.github.io/), [Jong Chul Ye†](https://bispl.weebly.com/professor.html).
+>
+> KAIST
+
+[![arXiv](https://img.shields.io/badge/arXiv-2411.15540-b31b1b.svg)](https://arxiv.org/abs/2505.23145)
+
 
 ![concept](assets/concept.jpg)
 
